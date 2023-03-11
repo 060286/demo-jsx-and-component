@@ -8,8 +8,13 @@ function App() {
     setShow(!show);
   };
 
+  console.log(show);
+
   return (
     <div>
+      <button onClick={(e) => {
+        alert('Hello World');
+      }}>Show alert</button>
       <button onClick={showCounterApp}>Show App</button>
       {show ? <CounterApp /> : <h3>Counter app not display!</h3>}
     </div>
